@@ -15,5 +15,11 @@
 //     return view('welcome');
 // });
 
+
 Route::get('/evaluacion', 'EvaluacionController@inicio')->name('evaluacion.inicio');
 Route::get('/evaluaciones', 'EvaluacionController@index')->name('evaluacion.index');
+Route::get('evaluacion/encuesta', function () {
+    return view('Encuesta.showEncuesta');
+});
+Route::post('evaluacion/encuesta/store','EvaluacionController@store')->name('evaluacion.store');
+
