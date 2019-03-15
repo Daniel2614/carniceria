@@ -17,6 +17,4 @@
 Route::get('evaluacion', function () {
     return view('evaluacion');
 });
-Route::get('index', function () {
-    return view('index');
-});
+Route::get('/evaluaciones', 'EvaluacionController@index')->name('evaluacion.index');
