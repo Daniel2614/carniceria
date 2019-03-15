@@ -17,4 +17,11 @@
 Route::get('evaluacion', function () {
     return view('evaluacion');
 });
+
+Route::get('evaluacion/encuesta', function () {
+    return view('Encuesta.showEncuesta');
+});
+
 Route::get('/evaluaciones', 'EvaluacionController@index')->name('evaluacion.index');
+
+Route::post('evaluacion/encuesta/store','EvaluacionController@store')->name('evaluacion.store');
