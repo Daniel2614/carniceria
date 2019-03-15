@@ -113,31 +113,9 @@
         </style>
     </head>
     <body>
-        <!-- comienza etapa 1, presentación -->
-        <div class="flex-center position-ref full-height" id="vista1">
-
-            <div class="content">
-
-                <div>
-                    <img src="https://i0.wp.com/ux.edu.mx/wp-content/uploads/207x140-blanco-3.png">
-                </div>
-                <div class="title m-b-md">
-                    Evaluación docente por jefaturas
-                    <div class="subtitle">
-                    Universidad de Xalapa
-                    </div>
-                </div>
-                <div class="links clickeable">
-                    <a id="comenzar">Comenzar</a>
-                </div>
-
-            </div>
-    
-        </div>
-         <!-- finaliza etapa 1, presentación -->
-         
+     
             <!-- comienza etapa 2, contenido principal -->
-        <div class="container-flex ocultar" id="vista2">
+        <div class="container-flex " id="vista2">
             <nav class="navbar navbarh navbar-expand-lg navbar-light bg-light" id="navbar-principal">
                 <ul class="navbar-nav mr-auto"> 
                      <li class="nav-item active">
@@ -162,58 +140,28 @@
                 <div class="content"> 
                     <div class="card">
                       <div class="card-header">
-                        <h3>Evaluación integral docente por parte de jefaturas</h3>
+                        <h3>Tabla de evaluaciones integrales por parte de jefaturas</h3>
                       </div>
                       <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                
-                                    <label for="selectjefatura"><h3>Elija su jefatura</h3></label>
-                                    <br>
-                                   
-                                      <select id="selectjefatura" style="width: 100%" class="form-control selecttest">
-                                      <option></option>
-                                      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-                                      <option>CIENCIAS DE LA EDUCACIÓN</option>
-                                      <option>CIENCIAS Y TECNICAS DE LA COMUNICACIÓN</option>
-                                      <option>DERECHO</option>
-                                      <option>INGENIERÍA MECATRONICA</option>
-                                      <option>NEGOCIOS INTERNACIONALES</option>
-                                      <option>MERCADOTECNIA</option>
-                                      <option>PSICOLOGÍA</option>
-                                    </select>
-                                   
-                            </div>
-                            <div class="col-md-6">
-                                
-                                   
-                                   <label for="selectdocente"><h3>Seleccione Docente</h3></label>
-                                    <br>
-                                   <div>
-                                       <select style="width: 100%" class="form-control selecttest2">
-                                      
-                                      <option></option>
-                                      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-                                      <option>CIENCIAS DE LA EDUCACIÓN</option>
-                                      <option>CIENCIAS Y TECNICAS DE LA COMUNICACIÓN</option>
-                                      <option>DERECHO</option>
-                                      <option>INGENIERÍA MECATRONICA</option>
-                                      <option>NEGOCIOS INTERNACIONALES</option>
-                                      <option>MERCADOTECNIA</option>
-                                      <option>PSICOLOGÍA</option>
-                                    </select>
-                                   </div>
-                              
-                            </div>
-                        </div>
-                        <hr><br>
-                        <div class="row">
-                           <div class="col-12">
-                               <center>
-                               <button type="button" class="btn btn-primary">Comenzar evaluación</button>
-                           </center>
-                           </div>
-                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
                         
                       </div>
                     </div>
@@ -239,14 +187,8 @@
 
         <script>
             $(document).ready(function() {
-                $('.selecttest').select2({
-                  placeholder: "Selecciona una jefatura",
-                  allowClear: true
-                });
-                $('.selecttest2').select2({
-                  placeholder:"Ingresa aquí tu carrera:",
-                  allowClear: true
-                });
+                $('.selecttest').select2();
+                $('.selecttest2').select2();
             });
 
             function ocultarPresentacion() {

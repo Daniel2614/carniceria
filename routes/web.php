@@ -17,3 +17,4 @@
 Route::get('evaluacion', function () {
     return view('evaluacion');
 });
+Route::get('/evaluaciones', 'EvaluacionController@index')->name('evaluacion.index');
