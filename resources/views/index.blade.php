@@ -166,13 +166,12 @@
                       </div>
                       <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 
-                                    <label for="selectjefatura"><h3>Elija su jefatura</h3></label>
-                                    <br>
-                                   
-                                      <select id="selectjefatura" style="width: 100%" class="form-control selecttest">
-                                      <option></option>
+                                    <h3>Elija su jefatura</h3><br>
+                                   <div class="mt-2">
+                                       <select class="form-control selecttest">
+                                      <option selected="selected">Ingresa:</option>
                                       <option>ADMINISTRACIÓN DE EMPRESAS</option>
                                       <option>CIENCIAS DE LA EDUCACIÓN</option>
                                       <option>CIENCIAS Y TECNICAS DE LA COMUNICACIÓN</option>
@@ -182,17 +181,14 @@
                                       <option>MERCADOTECNIA</option>
                                       <option>PSICOLOGÍA</option>
                                     </select>
-                                   
+                                   </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 
-                                   
-                                   <label for="selectdocente"><h3>Seleccione Docente</h3></label>
-                                    <br>
+                                   <h3>Seleccione Docente</h3>
                                    <div>
-                                       <select style="width: 100%" class="form-control selecttest2">
-                                      
-                                      <option></option>
+                                       <select class="form-control selecttest2">
+                                      <option selected="selected">Ingresa aquí tu carrera:</option>
                                       <option>ADMINISTRACIÓN DE EMPRESAS</option>
                                       <option>CIENCIAS DE LA EDUCACIÓN</option>
                                       <option>CIENCIAS Y TECNICAS DE LA COMUNICACIÓN</option>
@@ -239,14 +235,8 @@
 
         <script>
             $(document).ready(function() {
-                $('.selecttest').select2({
-                  placeholder: "Selecciona una jefatura",
-                  allowClear: true
-                });
-                $('.selecttest2').select2({
-                  placeholder:"Ingresa aquí tu carrera:",
-                  allowClear: true
-                });
+                $('.selecttest').select2();
+                $('.selecttest2').select2();
             });
 
             function ocultarPresentacion() {
