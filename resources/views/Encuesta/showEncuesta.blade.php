@@ -137,13 +137,22 @@
                                                 ¿Cumplió con los requerimientos del plan de clase con respecto a la entrega, el formato y el contenido?
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('dap1')}}" class="form-control select2 {{ $errors->has('dap1') ? ' is-invalid' : '' }}" id="dap1" name="dap1" title="Pregunta 1" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="dap1">Frecuencia:</label>
+                                                            <select value="{{old('dap1')}}" class="form-control select2 {{ $errors->has('dap1') ? ' is-invalid' : '' }}" id="dap1" name="dap1" title="Pregunta 1" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_dap1">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_dap1" name="calificacion_dap1" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
@@ -151,13 +160,22 @@
                                                 Al inicio del semestre, desglosó los criterios de evaluación con los correspondientes porcentajes, recabando la firma de los estudiantes y entregando el formato a la Jefatura.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('dap2')}}" class="form-control select2 {{ $errors->has('dap2') ? ' is-invalid' : '' }}" id="dap2" name="dap2" title="Pregunta 2" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="dap2">Frecuencia:</label>
+                                                            <select value="{{old('dap2')}}" class="form-control select2 {{ $errors->has('dap2') ? ' is-invalid' : '' }}" id="dap2" name="dap2" title="Pregunta 2" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_dap2">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_dap2" name="calificacion_dap2" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
@@ -165,13 +183,22 @@
                                                     Durante el periodo, proporcionó información sobre la conducta, la asistencia y/o el desempeño académico de sus alumnos.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('dap3')}}" class="form-control select2 {{ $errors->has('p3') ? ' is-invalid' : '' }}" id="dap3" name="dap3" title="Pregunta 3" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="dap3">Frecuencia:</label>
+                                                            <select value="{{old('dap3')}}" class="form-control select2 {{ $errors->has('p3') ? ' is-invalid' : '' }}" id="dap3" name="dap3" title="Pregunta 3" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_dap3">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_dap3" name="calificacion_dap3" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
@@ -179,13 +206,22 @@
                                                     Asistió a las juntas y a los eventos académicos convocados por la Jefatura.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('dap4')}}" class="form-control select2 {{ $errors->has('dap4') ? ' is-invalid' : '' }}" id="dap4" name="dap4" title="Pregunta 4" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="dap4">Frecuencia:</label>
+                                                            <select value="{{old('dap4')}}" class="form-control select2 {{ $errors->has('dap4') ? ' is-invalid' : '' }}" id="dap4" name="dap4" title="Pregunta 4" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_dap4">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_dap4" name="calificacion_dap4" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- Compromiso Académico -->
@@ -194,13 +230,22 @@
                                                     En caso de haber sido convocado, participó en actividades de titulación tales como Direcciones de Tesis, Sinodalías y/o impartición de la materia de  Seminario de Titulación.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('cap1')}}" class="form-control select2 {{ $errors->has('cap1') ? ' is-invalid' : '' }}" id="cap1" name="cap1" title="Pregunta 1" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="cap1">Frecuencia:</label>
+                                                            <select value="{{old('cap1')}}" class="form-control select2 {{ $errors->has('cap1') ? ' is-invalid' : '' }}" id="cap1" name="cap1" title="Pregunta 1" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_cap1">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_cap1" name="calificacion_cap1" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-two" role="tabpanel" aria-labelledby="list-settings-list">
@@ -208,13 +253,22 @@
                                                     En caso de haber sido convocado, impartió asesorías académicas para regularizar a alumnos que lo requerían y/o alumnos en status de Equivalencia.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('cap2')}}" class="form-control select2 {{ $errors->has('cap2') ? ' is-invalid' : '' }}" id="cap2" name="cap2" title="Pregunta 2" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="cap2">Frecuencia:</label>
+                                                            <select value="{{old('cap2')}}" class="form-control select2 {{ $errors->has('cap2') ? ' is-invalid' : '' }}" id="cap2" name="cap2" title="Pregunta 2" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_cap2">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_cap2" name="calificacion_cap2" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-tres" role="tabpanel" aria-labelledby="list-settings-list">
@@ -222,13 +276,22 @@
                                                     En caso de haber sido convocado, participó en la revisión de programas de estudio para la reestructuración y/o actualización de la Licenciatura.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('cap3')}}" class="form-control select2 {{ $errors->has('cap3') ? ' is-invalid' : '' }}" id="cap3" name="cap3" title="Pregunta 3" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="cap3">Frecuencia:</label>
+                                                            <select value="{{old('cap3')}}" class="form-control select2 {{ $errors->has('cap3') ? ' is-invalid' : '' }}" id="cap3" name="cap3" title="Pregunta 3" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_cap3">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_cap3" name="calificacion_cap3" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- Vinculación Externa -->
@@ -237,13 +300,22 @@
                                                     Realizó viajes o visitas de estudio a empresas, a congresos y/o a instituciones gubernamentales.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('vep1')}}" class="form-control select2 {{ $errors->has('vep1') ? ' is-invalid' : '' }}" id="vep1" name="vep1" title="Pregunta 1" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="vep1">Frecuencia:</label>
+                                                            <select value="{{old('vep1')}}" class="form-control select2 {{ $errors->has('vep1') ? ' is-invalid' : '' }}" id="vep1" name="vep1" title="Pregunta 1" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_vep1">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_vep1" name="calificacion_vep1" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-vep2" role="tabpanel" aria-labelledby="list-settings-list">
@@ -251,13 +323,22 @@
                                                     Organizó conferencias, mesas redondas y/o entrevistas, con personas externas a la Universidad.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('vep2')}}" class="form-control select2 {{ $errors->has('vep2') ? ' is-invalid' : '' }}" id="vep2" name="vep2" title="Pregunta 2" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="vep2">Frecuencia:</label>
+                                                            <select value="{{old('vep2')}}" class="form-control select2 {{ $errors->has('vep2') ? ' is-invalid' : '' }}" id="vep2" name="vep2" title="Pregunta 2" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_vep2">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_vep2" name="calificacion_vep2" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-vep3" role="tabpanel" aria-labelledby="list-settings-list">
@@ -265,13 +346,22 @@
                                                     Contactó a los alumnos con instituciones para la realización de actividades académicas, prácticas, servicio social o trabajo.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('vep3')}}" class="form-control select2 {{ $errors->has('vep3') ? ' is-invalid' : '' }}" id="vep3" name="vep3" title="Pregunta 3" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="vep3">Frecuencia:</label>
+                                                            <select value="{{old('vep3')}}" class="form-control select2 {{ $errors->has('vep3') ? ' is-invalid' : '' }}" id="vep3" name="vep3" title="Pregunta 3" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_vep3">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_vep3" name="calificacion_vep3" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- Actitud -->
@@ -280,13 +370,22 @@
                                                     Tiene apertura para aceptar sugerencias de parte de la Jefatura  y corregir actitudes respecto a su desempeño docente.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('ap1')}}" class="form-control select2 {{ $errors->has('ap1') ? ' is-invalid' : '' }}" id="ap1" name="ap1" title="Pregunta 1" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="ap1">Frecuencia:</label>
+                                                            <select value="{{old('ap1')}}" class="form-control select2 {{ $errors->has('ap1') ? ' is-invalid' : '' }}" id="ap1" name="ap1" title="Pregunta 1" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_ap1">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_ap1" name="calificacion_ap1" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="list-ap2" role="tabpanel" aria-labelledby="list-settings-list">
@@ -294,13 +393,22 @@
                                                     Mostró capacidad en el manejo de conflictos con los alumnos.
                                                 </div>
                                                 <div class="card-body">
-                                                    <select value="{{old('ap2')}}" class="form-control select2 {{ $errors->has('ap2') ? ' is-invalid' : '' }}" id="ap2" name="ap2" title="Pregunta 2" required>
-                                                        <option value="">SELECCIONE UNA OPCIÓN</option>
-                                                        <option value="SI">SI</option>
-                                                        <option value="PARCIALMENTE">PARCIALMENTE</option>
-                                                        <option value="NO">NO</option>
-                                                        <option value="N/A">N/A</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="ap2">Frecuencia:</label>
+                                                            <select value="{{old('ap2')}}" class="form-control select2 {{ $errors->has('ap2') ? ' is-invalid' : '' }}" id="ap2" name="ap2" title="Pregunta 2" required>
+                                                                <option value="">SELECCIONE UNA OPCIÓN</option>
+                                                                <option value="SI">SI</option>
+                                                                <option value="PARCIALMENTE">PARCIALMENTE</option>
+                                                                <option value="NO">NO</option>
+                                                                <option value="N/A">N/A</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="calificacion_ap2">Calificación:</label>
+                                                            <input class="form-control" type="text" id="calificacion_ap2" name="calificacion_ap2" readonly required>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -325,25 +433,63 @@
 <script src="{{ asset('plugins/Font_awesome/js/all.js') }}"></script>
 <script type="text/javascript">
 (function() {
-                'use strict';
-                window.addEventListener('load', function() {
-                    var forms = document.getElementsByClassName('form-control');
-                    
-                    var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('focusout', function(event) {
-                            //console.log( $(form).attr("name") );
-                            if( $(form).val() == '' ){
-                                $( '#'+$(form).attr("id") ).removeClass('is-valid');
-                                $( '#'+$(form).attr("id") ).addClass('is-invalid');
-                                $( '#error_'+$(form).attr("id") ).show();
-                            }else{
-                                $( '#'+$(form).attr("id") ).removeClass('is-invalid');
-                                $( '#'+$(form).attr("id") ).addClass('is-valid');
-                                $( '#error_'+$(form).attr("id") ).hide();
-                            }
-                        }, false);
-                    });
-                }, false);
-            })();
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('form-control');
+        
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('focusout', function(event) {
+                //console.log( $(form).attr("name") );
+                if( $(form).val() == '' ){
+                    $( '#'+$(form).attr("id") ).removeClass('is-valid');
+                    $( '#'+$(form).attr("id") ).addClass('is-invalid');
+                    $( '#error_'+$(form).attr("id") ).show();
+                }else{
+                    $( '#'+$(form).attr("id") ).removeClass('is-invalid');
+                    $( '#'+$(form).attr("id") ).addClass('is-valid');
+                    $( '#error_'+$(form).attr("id") ).hide();
+                }
+            }, false);
+        });
+    }, false);
+})();
+var forms = document.getElementsByClassName('select2');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('change', function(event) {
+            /*if( $(form).attr("aria-expanded") == "true" ){
+                var numIdPartida = $(form).attr("id").replace("select2-idPartida_", "");
+            }*/
+            console.log($(form).attr("id"))
+            switch ( $('#'+$(form).attr("id") ).val() ) {
+                case "SI":
+                    $('#calificacion_'+$(form).attr("id")).val('3');
+                    $('#calificacion_'+$(form).attr("id")).removeClass('is-invalid');
+                    $('#calificacion_'+$(form).attr("id")).addClass('is-valid');
+                    break;
+                case "PARCIALMENTE":
+                    $('#calificacion_'+$(form).attr("id")).val('2');
+                    $('#calificacion_'+$(form).attr("id")).removeClass('is-invalid');
+                    $('#calificacion_'+$(form).attr("id")).addClass('is-valid');
+                    break;
+                case "NO":
+                    $('#calificacion_'+$(form).attr("id")).val('1');
+                    $('#calificacion_'+$(form).attr("id")).removeClass('is-invalid');
+                    $('#calificacion_'+$(form).attr("id")).addClass('is-valid');
+                    break;
+                case "N/A":
+                    $('#calificacion_'+$(form).attr("id")).val('0');
+                    $('#calificacion_'+$(form).attr("id")).removeClass('is-invalid');
+                    $('#calificacion_'+$(form).attr("id")).addClass('is-valid');
+                    break;
+                case "":
+                    $('#calificacion_'+$(form).attr("id")).val('');
+                    $('#calificacion_'+$(form).attr("id")).removeClass('is-valid');
+                    $('#calificacion_'+$(form).attr("id")).addClass('is-invalid');
+                    break;
+                default:
+                    break;
+            }
+        });
+    });
 </script>
 </html>
