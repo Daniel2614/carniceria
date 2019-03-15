@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\CatMaestros;
 
 class EvaluacionController extends Controller
 {
@@ -80,5 +81,10 @@ class EvaluacionController extends Controller
     public function destroy($id)
     {
         //
+    }
+    function inicio(){
+        $maestros = CatMaestros::all()->pluck('nombre','id');
+        // dd($maestros);
+        return view('evaluacion',['maestros'=>$maestros]);
     }
 }

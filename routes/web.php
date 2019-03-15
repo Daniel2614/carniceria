@@ -14,7 +14,6 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('evaluacion', function () {
-    return view('evaluacion');
-});
+
+Route::get('/evaluacion', 'EvaluacionController@inicio')->name('evaluacion.inicio');
 Route::get('/evaluaciones', 'EvaluacionController@index')->name('evaluacion.index');

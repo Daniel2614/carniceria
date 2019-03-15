@@ -190,18 +190,9 @@
                                    <label for="selectdocente"><h3>Seleccione Docente</h3></label>
                                     <br>
                                    <div>
-                                       <select style="width: 100%" class="form-control selecttest2">
+                                    {{ Form::select('docente',$maestros,null,array('required','class'=>'form-control selecttest2 ','title'=>'Docente','style'=>'width:100%')) }}
+                                       
                                       
-                                      <option></option>
-                                      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-                                      <option>CIENCIAS DE LA EDUCACIÓN</option>
-                                      <option>CIENCIAS Y TECNICAS DE LA COMUNICACIÓN</option>
-                                      <option>DERECHO</option>
-                                      <option>INGENIERÍA MECATRONICA</option>
-                                      <option>NEGOCIOS INTERNACIONALES</option>
-                                      <option>MERCADOTECNIA</option>
-                                      <option>PSICOLOGÍA</option>
-                                    </select>
                                    </div>
                               
                             </div>
@@ -244,7 +235,7 @@
                   allowClear: true
                 });
                 $('.selecttest2').select2({
-                  placeholder:"Ingresa aquí tu carrera:",
+                  placeholder:"Ingresa aquí el docente:",
                   allowClear: true
                 });
             });

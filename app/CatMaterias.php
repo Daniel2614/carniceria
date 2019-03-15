@@ -9,7 +9,6 @@ class CatMaterias extends Model
     protected $table = 'evaluacion_materiasesco';
 
     protected $fillable = [
-
     	'id',
     	'semestre',
     	'clave',
@@ -17,4 +16,8 @@ class CatMaterias extends Model
     	
 
 	];
+	public function maestros()
+    {
+    	return $this->belongsToMany('App\CatMaestros', 'evaluacion_maestros','idMateria','idMaestro')->withTimestamps();
+    }
 }
